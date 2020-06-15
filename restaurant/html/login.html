@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登入界面</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+	<script type="text/javascript" src="../js/ajax2.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+
+	<script type="text/javascript">
+				 $(document).ready(function(){
+            var rem = $.cookie('remember');
+            if(rem){
+                $("#rempass").prop("checked",true);
+                $("#username").val($.cookie("username"));
+                $("#password").val($.cookie("password"));
+            }
+        });
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div id="first">
+			<p id="res">轻院订餐网</p>
+			<p id="uur"><a href="#">www.qyrestaurant.com</a></p>
+			<input type="text" name="inquire" id="inquire" placeholder="猜你喜欢">
+			<input type="button" name="submitt" value="提交" id="submit">
+
+			<ul id="more">
+				<li><a href="#">提点意见</a></li>
+				<li><a href="#">收藏本站</a></li>
+				<li><a href="#">订阅</a></li>
+				<li><a href="#">帮助</a></li>
+			</ul>
+		</div>
+
+	<!-- 菜类分类及登入注册 -->
+		<div id="nav">
+				<ul id="all">
+					<li><a href="#">全部</a></li>
+					<li><a href="#">炒菜</a></li>
+					<li><a href="#">面食</a></li>
+					<li><a href="#">饮料</a></li>
+					<li><a href="#">米饭</a></li>
+					<li><a href="#">凉菜</a></li>
+				</ul>
+
+				
+		</div>
+		<!-- <input type="button" name="logins" value="登入" id="logins"> -->
+				<input type="button" name="register" value="注册" id="register">
+				<input type="button" name="changePassword" value="修改密码" id="changePassword">
+	</div>
+	<!-- *******************登入******************* -->
+	<div id="login">
+		用户名<span id="need">*</span> <br /> <input type="text" name="" id="username" placeholder="请输入用户名">&nbsp;&nbsp;<span id="buke">用户名确定后不可修改！</span> <br/> 
+		密码<span id="need">*</span> <br /> <input type="password" name="" id="password" placeholder="请输入密码"> <br /> 
+			<input type="checkBox" id="rempass"> 记住密码 <br /> 
+		<input type="button" value="登入" id="go" οnclick="jump()">
+	</div>	
+	
+</body>
+</html>

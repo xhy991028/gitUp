@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提交成功后</title>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>提交成功<span id="second">5</span>S后自动跳转点餐界面或<a href="dishes.html">点击跳转</a></h1>
+</body>
+
+<script type="text/javascript">
+		function jump(count) {
+			window.setTimeout(function(){
+			count--;
+			if (count > 0) {
+				$("#second").html(count);
+				jump(count);
+			} else {
+				// var uesrname = localStorage.getItem("username");
+				// localStorage.setItem("newusername",uesrname)
+				location.href = "../html/dishes.html";
+			}
+		},1000);
+	}
+	jump(5);
+
+	
+
+</script>
+</html>

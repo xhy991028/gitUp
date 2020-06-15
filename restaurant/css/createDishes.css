@@ -1,0 +1,75 @@
+body {
+	background: #E2F1F4;
+}
+*{
+	padding: 0;
+	margin:0;
+	text-decoration: none;
+	list-style:none;
+}
+#all {
+	width: 1200px;
+	height: 600px;
+	background: white;
+	margin-left: 160px;
+	margin-top: 100px;
+}
+#all .have {
+	color: red;	
+}
+#all .typesOf{
+	position: relative;
+	top: 30px;
+	left: 40px;
+}
+#all #type {
+	position: relative;
+	top: 30px;
+	left: 40px;
+}
+#all .cName{
+	position: relative;
+	top: 40px;
+	left: 40px;
+}
+#all #cName1 {
+	position: relative;
+	top: 40px;
+	left: 40px;
+}
+#all .cMoney{
+	position: relative;
+	top: 50px;
+	left: 40px;
+}
+#all #cMoney1 {
+	position: relative;
+	top: 50px;
+	left: 40px;
+}
+#all .cG{
+	position: relative;
+	top: 60px;
+	left: 40px;
+}
+#all #cG1 {
+	position: relative;
+	top: 60px;
+	left: 40px;
+}
+#all .cImg{
+	position: relative;
+	top: 70px;
+	left: 40px;
+}
+
+#shangchaun {
+	position: relative;
+	top: 80px;
+	left: 40px;
+}
+#bC {
+	position: relative;
+	top: 100px;
+	left: 40px;
+}

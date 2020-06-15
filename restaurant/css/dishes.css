@@ -1,0 +1,288 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	text-align: none;
+	list-style:none;
+}
+body {
+	background:#E2F2F2 
+}
+/*---------------头部搜索信息----------------*/
+#first {
+	width: 100%;
+	height: 130px;
+	background: #3F4042;	
+}
+#header #first #res {
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	left: 100px;	
+	top: 25px;
+}
+#header #first #uur a {
+	color: white;
+	position: absolute;	
+	left: 85px;
+	top: 65px;
+}
+#header #first #inquire {
+	width: 200px;
+	height: 20px;	
+	position: absolute;
+	left: 580px;
+	top: 50px;
+	padding-left: 2px;
+	/*border-radius: 5px;*/
+	border:#ccc 1px solid;
+	z-index: 100;
+}	
+#header #first #submit {
+	width:70px; 
+	height: 22px;
+	position: absolute;
+	left: 783px;
+	top: 50px;
+	background: #4CABC3;
+	border:#ccc 1px solid;
+}
+#header #first #more {
+	margin-right: 130px;
+}
+#header #first #more li{
+	display: inline;
+}
+#header #first #more li a {
+	color: white;
+	float: right;
+	margin-left: 20px;	
+	margin-top: 5px;
+}
+
+/*---------------菜类分类及登入注册---------------*/
+#nav {
+	width: 100%;
+	height: 40px;
+	background: #099F9F;
+}
+#nav #all li{
+	display: inline;
+	padding:9.5px;
+	position: relative;
+	top: 10px;
+	left: 85px;
+}
+#nav #all li:hover {
+	background: #c;
+}
+#nav #all li a {
+	color: white;
+}
+#nav #all li a:hover{
+	color: black;	
+}
+
+#logins {
+	width: 80px;
+	height: 25px;
+	float: right;
+	margin-right: 120px;
+	position: relative;
+	bottom: 13px;
+}
+#register {
+	width: 50px;
+	height: 25px;
+	margin-right: -120px;
+	position: relative;
+	left: 1410px;
+	bottom: 13px;
+}
+ /*---------------登入完之后显示登入的账号---------------*/
+#xianshi {
+	height: 40px;
+	position: absolute;
+	right: 250px;
+	top: 130px;
+	text-align: center;
+	line-height: 40px;
+	color: black;
+ 	font-size: 22px;
+	cursor:pointer;
+}
+/*---------------菜品内容---------------*/
+#content {
+	 width: 1100px;
+/*	 height: 800px;*/
+	 margin: 0 auto;
+	 position: relative;
+		}
+#content   .item{
+	 border: 1px solid gray;
+ 	 padding: 4px;
+	 position: absolute;
+	 margin-left: -115px;
+	 margin-top: 30px;
+	 top: 0;
+}
+
+#content .item p {
+	 width: 180px;
+	 margin-top: 10px;	
+}		
+#content .item img {
+ 	 width: 150px;
+ 	 height: 150px;
+ 	 margin: 0 auto;
+	 text-align: center;
+	 padding-left: 25px;  
+ }	
+
+#content .item p:nth-child(2){
+	 margin-left: 5px;
+	 padding-left: 19px;
+  }
+#content .item p:nth-child(3){
+	 margin-left: 5px;
+	 padding-left: 19px;
+  }
+#content p:nth-child(4){
+	width: 10px;
+	height: 10px;
+	 position: absolute;
+	 left: 158px;
+	 top: 158px;
+	 color: red;
+ }
+/*-----------------------------------------------------------------*/
+#content {
+	 width: 1100px;
+/*	 height: 800px;*/
+	 margin: 0 auto;
+	 position: relative;
+		}
+#content   .item2{
+	 border: 1px solid gray;
+ 	 padding: 4px;
+	 position: absolute;
+	 margin-left: -115px;
+	 margin-top: 30px;
+	 top: 0;
+}
+
+#content .item2 p {
+	 width: 180px;
+	 margin-top: 10px;	
+}		
+#content .item2 img {
+ 	 width: 150px;
+ 	 height: 150px;
+ 	 margin: 0 auto;
+	 text-align: center;
+	 padding-left: 25px;  
+ }	
+
+#content .item2 p:nth-child(2){
+	 margin-left: 5px;
+	 padding-left: 19px;
+  }
+#content .item2 p:nth-child(3){
+	 margin-left: 5px;
+	 padding-left: 19px;
+  }
+#content p:nth-child(4){
+	width: 10px;
+	height: 10px;
+	 position: absolute;
+	 left: 158px;
+	 top: 158px;
+	 color: red;
+ }
+
+/*-----------------------------------------------------------------*/
+#content a{
+ 	width: 100px;
+ 	height: 100px;
+ 	color: black;
+ }
+/*#content a:hover img{
+	width: 160px;
+	height: 160px;
+	transition:0.2s;
+}*/
+/*点餐*/
+#order {
+	width: 100px;
+	height: 30px;
+	background: #F9AC42;
+	border-radius: 5px;
+	position: absolute;
+	left: 1410px;
+	top: 200px;
+}
+.thumbnail {
+	width: 315px;	
+	height: 800px;
+	border: 1px solid gray;
+	background: #F6F5F3;
+	position: absolute;
+	left: 1200px;
+	top: 250px;
+	display: none;
+}
+/*------------------------------------------------*/
+			/*全部字体大小*/
+#smallAll p:nth-child(2){
+	font-size: 2px;
+}
+
+#dianc li img{
+	width: 70px;
+	height: 120px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+#dianc p {
+	margin-left: 20px;
+}
+#dianc p:nth-child(3){
+	color: red;
+}
+#dianc li {
+	float: left;
+}
+
+hr{
+	width: 100%;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 730px;
+}
+
+#sum{
+	position: absolute;
+	top: 740px;
+	left: 20px;
+}
+#money{
+	position: absolute;
+	top: 740px;
+	left: 60px;
+}
+#remove a{
+	position: absolute;
+	top: 775px;
+	left: 20px;
+	font-size: 12px;
+}
+#down{
+	width: 60px;
+	height: 30px;
+	background: #0A7AC9;
+	position: absolute;
+	top: 760px;
+	left: 230px;
+	border-radius: 5px;
+}

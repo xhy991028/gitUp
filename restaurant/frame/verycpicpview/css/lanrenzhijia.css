@@ -1,0 +1,131 @@
+
+
+
+html, body {
+	padding:0;
+	margin:0;
+	height:100%;
+	min-height:100%;
+}
+body {
+	background:url(../images/bg.png) repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#fff;
+}
+#content {
+	margin:0 auto;
+	width:1000px;
+}
+.info {
+	float:left;
+	width:100%;
+	margin:20px 0;
+	padding-bottom:20px;
+	border-bottom:1px solid #353535;
+	color:#fff;
+	position:relative;
+}
+.info h1 {
+	font-family:'Playball', serif;
+	font-size:77px;
+	font-weight:normal;
+	margin:0;
+	margin-bottom:20px;
+}
+.info p {
+	float:left;
+	margin:0;
+	margin-bottom:6px;
+}
+.info .demo {
+	position:absolute;
+	top:45px;
+	right:0;
+}
+.info .demo a {
+	display:inline-block;
+	margin-left:10px;
+	font-weight:bold;
+}
+.dd {
+	float:left;
+	clear:both;
+	width:960px;
+	padding:20px;
+	padding-bottom:10px;
+	margin:0;
+	margin-bottom:20px;
+	background:#ddd;
+	background:rgba(255, 255, 255, .8);
+	color:#222;
+}
+.footer {
+	float:left;
+	clear:both;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+	text-transform:uppercase;
+	padding:20px 0;
+	margin-top:20px;
+	border-top:1px solid #353535;
+}
+/* ------ filtrey
+-----------------------------------------------*/
+
+.filters {
+	float:left;
+	clear:both;
+	width:1000px;
+}
+.filters .filter {
+	float:left;
+	clear:both;
+	width:960px;
+	padding:20px;
+	margin-bottom:20px;
+	background:#545454;
+	background:rgba(255, 255, 255, .1);
+}
+.filters .filter a {
+	float:left;
+	display:block;
+	padding:5px;
+	margin-right:20px;
+	font-size:11px;
+	text-transform:uppercase;
+	outline:none;
+}
+.filters .filter .active {
+	background:#eee;
+	color:#111;
+}
+.filters .container {
+	float:left;
+	clear:both;
+	width:100%;
+	position:relative;
+}
+.filters .container ul, .filters .container ul li {
+	display:block;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.filters .container ul li {
+	float:left;
+	margin:0 8px 8px 0;
+	font-size:0;
+	line-height:0;
+}
+.filters .container a {
+	display:block;
+	float:left;
+	width:192px;
+	height:192px;
+}
+a {
+	color:#eee;
+	text-decoration:none;
+}

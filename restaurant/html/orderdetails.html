@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+
+	<link rel="stylesheet" type="text/css" href="../dist/css/zui.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/orderdetails.css">
+	<script type="text/javascript" src="../js/orderdetails.js"></script>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/ajax2.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+
+	
+	<script type="text/javascript" src="../dist/js/zui.min.js"></script>
+</head>
+<body>
+	<div id="order_details">
+		<p>订单详情</p> <hr >
+
+		<div id="one">1.选择菜肴</div>
+		<i class="icon icon-arrow-right" id="jone"></i>
+		<div id="two">2.确认订单</div>
+		<i class="icon icon-arrow-right" id="jtwo"></i>
+		<div id="three">3.配送</div>
+		<i class="icon icon-arrow-right" id="jthree"></i>
+		<div id="four">4.完成交易</div>
+
+	<table class="table">
+ 		<thead>
+  			<tr>
+    		 	 <th>序号</th>
+     			 <th id="name">图片</th>
+     			 <th>名称</th>
+     			 <th>数量</th>
+     			 <th>单价</th>
+   			</tr>
+	    </thead>
+  		<tbody id="nR">
+ 		   <!--  <tr>
+   			   <td>1</td>
+     		   <td><img src="../imgs/img2.jpg"></td>
+     		   <td class="hello"></td>
+     		   <td>1</td>
+     		   <td>￥5</td>
+ 		    </tr>
+  		    <tr>
+     		   <td>2</td>
+     		   <td><img src="../imgs/img1.jpg"></td>
+     		   <td>青椒肉丝</td>
+     		   <td>1</td>
+     	       <td>￥8</td>
+   		    </tr>
+   		    <tr>
+     		   <td>3</td>
+     		   <td><img src="../imgs/img10.jpg"></td>
+     		   <td>宫保鸡丁</td>
+     		   <td>1</td>
+     	       <td>￥11</td>
+   		    </tr> -->
+ 		</tbody>
+	</table>
+	<!-- 配送信息 -->
+	<p>配送信息</p> <hr id="hr">
+	
+	<div id="delivery">
+		<div class="address">地址：<span class="have">*</span>
+		</div> 
+		<input type="text" id="kk">
+		
+		<div class="rName">订餐者姓名：<span class="have">*</span>	
+		</div>
+		<input type="text" id="rName1">
+
+		<div class="rName">联系方式：<span class="have">*</span>
+		</div>
+		<input type="number" id="contact" >
+
+		<div class="rName">备注：<span class="have">*</span>
+		</div>
+		<textarea id="remarks"></textarea>
+	</div>	
+
+	<button class="btn btn-primary" type="button" id="sub">提交</button>
+</div>
+</body>
+</html>

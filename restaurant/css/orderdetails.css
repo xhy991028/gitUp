@@ -1,0 +1,123 @@
+body {
+	background: #E2F1F4;
+	/*background-size: 100%;*/
+}
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style:none;
+
+}
+#order_details {
+	width: 1300px;
+	background: white;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+#order_details p {
+	font-size: 22px;
+	padding-top: 60px;
+	padding-left: 40px;
+}
+#order_details hr{
+	width: 1200px;
+	margin-left: 40px;
+	margin-top: 10px;
+	border: 0.5px solid black;
+}
+#order_details #one {
+	width: 120px;
+	height: 25px;
+	background: gray;
+	text-align: center;
+	position: absolute;
+	top: 220px;
+	left: 510px;
+}
+#order_details #two {
+	width: 120px;
+	height: 25px;
+	background: gray;
+	text-align: center;
+	position: absolute;
+	top: 220px;
+	left: 640px;
+}
+#order_details #three {
+	width: 120px;
+	height: 25px;
+	background: gray;
+	text-align: center;
+	position: absolute;
+	top: 220px;
+	left: 770px;
+}
+#order_details #four {
+	width: 120px;
+	height: 25px;
+	background: gray;
+	text-align: center;
+	position: absolute;
+	top: 220px;
+	left: 900px;
+}
+#order_details #jone {
+	z-index: 10;
+	position: absolute;
+	left: 628px;
+}
+#order_details #jtwo {
+	z-index: 10;
+	position: absolute;
+	left: 758px;
+}
+#order_details #jthree {
+	z-index: 10;
+	font-size: 16px;
+	position: absolute;
+	left: 888px;
+}
+#order_details .table {
+	width: 1000px;
+	margin:0 auto;
+	margin-top: 80px;
+}
+.table {
+	text-align: center;
+}
+.table thead tr th{
+	text-align: center;
+}
+#nR tr td:nth-child(2){
+	width: 50px;
+	height: 50px;
+}
+/*配送信息*/
+#delivery .address{
+	font-size: 14px;
+	padding-left: 40px;
+}
+.have {
+	color: red;
+}
+#kk,
+#rName1,
+#contact,
+#remarks {
+	width: 200px;
+	margin-left: 40px;
+}
+.rName {
+	font-size: 14px;
+	padding-left: 40px;
+	padding-top: 10px;
+}
+#remarks {
+	height: 100px;
+}
+#sub {
+	position: relative;
+	top: 40px;
+	left: 1200px;
+}

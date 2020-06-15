@@ -1,0 +1,108 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+body {
+	background: #E2F1F4;
+}
+#content {
+	width: 800px;
+	height: 500px;
+	background: white;
+	position: absolute;
+	left: 400px;
+	top: 100px;
+} 
+#toux img{
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	top: 70px;
+	left: 70px;
+}
+#names {
+	font-size: 26px;
+	position: absolute;
+	left: 300px;
+	top: 70px;
+}
+.add {
+	font-size: 20px;
+	position: absolute;
+	left: 650px;
+	top: 245px;
+}
+.add a{
+	color: red;
+}
+#diz,
+#jianj{
+	color: green; 	
+}
+#zz {
+	font-size: 14px;
+	position: absolute;
+	left: 300px;
+	top: 145px;
+}
+#zz1 {
+	font-size: 14px;
+	position: absolute;
+	left: 300px;
+	top: 175px;
+}
+hr {
+	margin-top: 230px;
+	border: 1px solid gray;
+}
+#hot {
+	position: relative;
+	left: 70px;
+	top: 50px;
+}
+#zhanshi{
+	width: 700px;
+	height: 200px;
+	border: 1px solid black;
+	position: relative;
+	left: 50px;
+	top: 20px;
+}
+#zhanshi img{
+	width: 110px;
+	height: 110px;
+	margin:18px;
+	margin-top: 50px;
+	border: 1px solid gray;
+	padding: 10px;
+}
+table {
+	width: 200px;
+	border-collapse: collapse;
+	position: absolute;
+	top: 90px;
+	left: 540px;
+}
+table tr td {
+	height: 50px;
+	border: 1px solid black;
+	padding-left: 5px;
+}
+table tr:first-child{
+	background: #F8F8F8;
+	
+}
+.guanz {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 945px;
+	top: 350px;
+}
+#souc {
+	position: absolute;
+	left: 970px;
+	top: 349px;
+	font-size: 16px;
+}

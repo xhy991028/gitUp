@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/zui.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/percenter.css">
+	<script type="text/javascript" src="../js/percenter.js"></script>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/ajax2.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+</head>
+<body>
+	<div id="information">
+		<p id="ji">基本信息</p>
+		<a href="#">
+				<div id="imgg">
+					<img style="width:120px;height:90px;border-radius:50%;" src="../newimg/touxz.jpg" id="pic">
+					<input type="file" name="file" id="upload" accept="image/*" style="display: none">
+				</div>
+		</a>
+		
+		<p id="userna">用户名:<span id="user"></span></p>
+
+		<p id="lv">级别:<span>普通用户</span></p>
+		<p id="safety">安全度:<span>初级</span></p>
+		<p id="reputation">信誉值:<span>100</span></p>
+
+		<p id="myorder">我的订单</p>		
+	</div>
+
+	<div id="allordeer">
+		<table class="table">
+ 		<thead>
+  			<tr>
+    		 	 <th>序号</th>
+     			 <th id="name">图片</th>
+     			 <th>名称</th>
+     			 <th>数量</th>
+     			 <th>单价</th>
+   			</tr>
+	    </thead>
+  		<tbody id="dingdana">
+ 		   <!--  <tr>
+   			   <td>1</td>
+     		   <td><img src="../imgs/img2.jpg"></td>
+     		   <td class="hello">fsf</td>
+     		   <td>1</td>
+     		   <td>￥5</td>
+ 		    </tr> -->
+ 		</tbody>
+	</table>
+	</div>
+	<button class="btn" type="button" id="drop_out">退出登入</button>
+	<button class="btn" type="button" id="ret">返回</button>
+</body>
+</html> 

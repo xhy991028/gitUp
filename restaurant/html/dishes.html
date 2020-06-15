@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点餐界面</title>
+
+	<script type="text/javascript" src="../js/ajax2.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/dishes.css">
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/dish.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<!-- <script type="text/javascript" src="../dist/js/zui.js"></script> -->
+ 	
+</head>
+<body>
+
+	
+	<!-- 头部搜索信息 -->
+	<div id="header">
+		<div id="first">
+			<p id="res">一日三餐餐厅</p>
+			<p id="uur"><a href="#">www.threemealsaday.com</a></p>
+			<input type="text" name="inquire" id="inquire" placeholder="猜你喜欢">
+			<input type="button" name="submitt" value="提交" id="submit">
+
+			<ul id="more">
+				<li><a href="#">提点意见</a></li>
+				<li><a href="#">收藏本站</a></li>
+				<li><a href="#">订阅</a></li>
+				<li><a href="#">帮助</a></li>
+			</ul>
+		</div>
+
+	<!-- 菜类分类及登入注册 -->
+		<div id="nav">
+				<ul id="all">
+					<li id="allx"><a href="javascript:void(0);">全部</a></li>
+					<li id="chaocai"><a href="javascript:void(0);">炒菜</a></li>
+					<li id="mian"><a href="javascript:void(0);">面食</a></li>
+					<li id="drink"><a href="javascript:void(0);">饮料</a></li>
+					<li id="rice"><a href="javascript:void(0);">米饭</a></li>
+					<li id="liangcai"><a href="javascript:void(0);">凉菜</a></li>
+				</ul>
+
+				<input type="button" name="logins" value="重新登入" id="logins">
+				<input type="button" name="register" value="注册" id="register">
+
+				<!-- 登入完之后显示登入的账号 -->
+				
+				<div id="xianshi"></div>
+				
+		</div>
+
+		<!-- 菜品 -->
+		<div id="content">
+			<a href="javascript:void(0);" class="chaocai" id="chaocai">
+				<div class="item" id="i1">
+					<img src="../imgs/img1.jpg" >
+					<p class="ab">家常炒苋菜</p>
+					<p>苋菜在我们这边的读音为“汗菜”。</p>
+					<p>7￥</p>							
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">				
+					<img src="../imgs/img2.jpg">	
+					<p class="ab">青椒炒香干</p>
+					<p>这是我家餐桌经常出现的一道家常菜。 简单易做，美味又开胃。</p>
+					<p>8￥</p>
+					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">				
+					<img src="../imgs/img4.jpg">
+					<p class="ab">家常炒面</p>
+					<p>北方有句俚语，叫做“头伏饺子二伏面，三伏烙饼摊鸡蛋”。</p>
+					<p>8￥</p>				
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img3.jpg">
+					<p class="ab">剁椒丝瓜炒蛋</p>
+					<p>丝瓜是夏日的时令蔬菜。 丝瓜的营养价值很高，夏日多吃丝瓜对女性很好，因为它可以美肤润肌。</p>	
+					<p>9￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img5.jpg">
+					<p class="ab">家常炒脆藕</p>
+					<p>新鲜的莲藕非常脆嫩，藕的营养价值很高，富含铁、钙等微量元素，植物蛋白质、维生素以及淀粉含量也很丰富，有明显的补益气血，增强人体免疫力作用。</p>	
+					<p>6￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img6.jpg">
+					<p class="ab">家常炒茄子</p>
+					<p>家常炒茄子普普通通的下酒菜，茄子有降低高血脂，高血压功效，老年人和高血脂、高血压的人可经常吃。 另外茄子含有维生素E，有防止出血和抗衰老功能。</p>	
+					<p>6￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img7.jpg">
+					<p class="ab">家常炒猪肝</p>
+					<p>肝中铁质丰富，是补血食品中最常用的食物。尤其是猪肝，其营养含量是猪肉的十多倍。食用肝可调节和改善贫血病人造血系统的生理功能。</p>	
+					<p>9￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img8.jpg">
+					<p class="ab">上海家常炒酱</p>
+					<p>上海家常炒酱——是上海家家户户都很喜欢的一道很传统的菜，它不同于饭店的特色八宝辣酱，而是很随意一道平常人家餐桌上的家常菜，它拌饭，拌面等是绝佳美味。</p>	
+					<p>7￥</p>					
+				</div>
+			</a>
+			
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img9.jpg">
+					<p class="ab">红烧燕鱼</p>
+					<p>燕鱼，又名神仙鱼、天使鱼。鱼体呈菱形，极侧扁，尾鳍后缘平直，背鳍、臀鳍鳍条向后延长，上下对称，似张开的帆。腹鳍特长，呈丝状。</p>	
+					<p>12￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img10.jpg">
+					<p class="ab">辣子鸡</p>
+					<p>自巴蜀歌乐山走下来的川菜门脸</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img11.jpg">
+					<p class="ab">家常炒腊肉</p>
+					<p>腊肉是南北方人民普遍喜爱的一道菜，各地腊肉各具特色； 精选土猪做原料；制作精细，具有色彩红亮，烟熏咸香，肥而不腻，醇香浓郁，鲜美异常的独特风味</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="chaocai">
+				<div class="item">			
+					<img src="../imgs/img12.jpg">
+					<p class="ab">家常炒米</p>
+					<p>喜欢吃炒饭，每次做的都会有变化，这个最家常不过的饭，想来每家都有自己的特点。这次炒饭，用生菜叶子包了吃，有不一样的感觉呢。</p>	
+					<p>7￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian1.jpg">
+					<p class="ab">蔓越莓红糖发糕</p>
+					<p>把传统的红糖发糕里的红枣换成了蔓越莓，酸酸甜甜的，风味更赞哦。</p>	
+					<p>12￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian2.jpg">
+					<p class="ab">海苔肉松蛋糕卷</p>
+					<p>肉松蛋糕卷是一道西点。制作材料主要有鸡蛋、面粉、肉松、牛奶等。制作过程复杂，口感鲜美香甜，厚薄以自己的喜好决定。</p>
+					<p>11￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian3.jpg">
+					<p class="ab">青菜木耳下米面</p>
+					<p>米面是用大米加水磨成的浆,用旋子做成像粉皮的薄片,再切成细条而成，有的地方叫河粉。</p>	
+					<p>11￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian4.jpg">
+					<p class="ab">千层发面肉饼</p>
+					<p>单就这烧饼就有死面饼、发面饼、死面和发面混合的饼。</p>	
+					<p>11￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian5.jpg">
+					<p class="ab">孜然千层卷饼</p>
+					<p>煎饼，是中国传统食品之一，用调成糊状的杂面摊烙而成，多由粗粮制作，也有细面制作。烙成饼后水分少较干燥，可厚可薄，方便叠层，口感筋道，食后耐饥饿。</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian6.jpg">
+					<p class="ab">土豆丝麻酱凉拌面</p>
+					<p>麻将拌面，浓浓的麻酱味道很好吃，再配上自己喜欢的食材，简单美味的一碗凉拌面很快就能上桌，不失为夏天的一道美食</p>	
+					<p>8￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian7.jpg">
+					<p class="ab">肉茄丁面</p>
+					<p>现在的季节吃什么蔬菜都很便宜，所以啊，马路边的卖菜的小贩们也省事了，真的超级好吃哦</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian8.jpg">
+					<p class="ab">葱丝面</p>
+					<p>虽然是简简单单的一碗面，但是味道非常棒，清淡、葱香、还有牛肉的香味，味道诱人。这种做法非常适合上班族的早餐，还可以变换辅料，做出其它口味的早餐面。</p>	
+					<p>7￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian9.jpg">
+					<p class="ab">粤式葱油饼</p>
+					<p>跟北方的葱油饼不同，就好像这南北馒头的差别一样， 北方的面食配料较为简单，面粉，水，盐，朴朴实实</p>	
+					<p>8￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian10.jpg">
+					<p class="ab">担担面</p>
+					<p>担担面，汉族特色面食。著名的成都小吃(自贡小吃，起源于自贡）。</p>	
+					<p>9￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="mian">
+				<div class="item">			
+					<img src="../imgs/mian11.jpg">
+					<p class="ab">油泼扯面</p>
+					<p>油泼扯面是秦人家中最普通的面食，可是身在外地的我，很难吃到正宗的风味。</p>	
+					<p>8￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai1.jpg">
+					<p class="ab">鲷鱼沙拉</p>
+					<p>高温就来道轻食吧-----鲷鱼沙拉，以新鲜的蔬菜沙拉打底， 配上是香煎鲷鱼片。鲷鱼一般超市已经收拾干净，也没有刺，不用一根一根的去挑。</p>	
+					<p>13￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai2.jpg">
+					<p class="ab">糖醋红心萝卜</p>
+					<p>常吃萝卜可降低血脂、软化血管、稳定血压，预防冠心病、动脉硬化、胆石症等疾病。</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai3.jpg">
+					<p class="ab">凉拌金针莴笋叶</p>
+					<p>莴笋口感鲜嫩爽脆，营养价值丰富。当然莴笋叶也是很有营养的，鲜嫩的莴笋叶也是可以吃的，可凉拌可热炒。</p>	
+					<p>9￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai4.jpg">
+					<p class="ab">糖醋拌藕</p>
+					<p>藕，又称莲藕，属睡莲科植物，莲的根茎。肥大，有节，中间有一些管状小孔，折断后有丝相连。藕微甜而脆，可生食也可做菜，而且药用价值相当高。</p>	
+					<p>8￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai5.jpg">
+					<p class="ab">凉拌糖醋海蜇丝</p>
+					<p>海蜇凉拌后，质脆而韧，清凉爽口，是常用的佐酒佳肴。</p>	
+					<p>13￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai6.jpg">
+					<p class="ab">拌麻辣黄瓜</p>
+					<p>黄瓜是老百姓最常食用的一种食蔬，它脆嫩清香，味道鲜美，而且营养丰富。含有多种维生素，使护肤美容的佳品。</p>	
+					<p>8￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai7.jpg">
+					<p class="ab">凉拌萝卜丝</p>
+					<p>冬吃萝卜夏吃姜，不劳医生开药方。冬天炖萝卜、拌萝卜、炒萝卜。</p>	
+					<p>7￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="liangcai">
+				<div class="item">			
+					<img src="../imgs/liangcai8.jpg">
+					<p class="ab">蒜米皮蛋</p>
+					<p>蒜米皮蛋，蒜的种类繁多，依蒜头皮色的不同，可分为白皮蒜和紫皮蒜；依蒜瓣多少，又可分为大瓣种和小瓣种。</p>	
+					<p>8￥</p>					
+				</div>
+			</a>
+			
+			<a href="javascript:void(0);" class="drink">
+				<div class="item">			
+					<img src="../imgs/drink1.jpg">
+					<p class="ab">自制奶茶</p>
+					<p>最近我身边的小伙伴都好喜欢点奶茶店的奶茶来喝，我研究了一下发现自己在家做也很简单。而且自己选材搭配，更合口味，更好喝。</p>	
+					<p>12￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="drink">
+				<div class="item" id="aa">			
+					<img src="../imgs/drink2.jpg">
+					<p class="ab">绿豆沙酸奶</p>
+					<p>冰镇的浓稠的酸奶，加上自已煮好的绿豆，如果你家中有这两种食材，就自制一杯解暑又清凉的绿豆沙酸奶吧。</p>
+					<p>12￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="drink">
+				<div class="item">			
+					<img src="../imgs/drink3.jpg">
+					<p class="ab">冰镇杨梅汁</p>
+					<p>杨梅有生津止渴、健脾开胃之功效，多食不仅无伤脾胃，且有解毒祛寒之功效。</p>	
+					<p>11￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="drink">
+				<div class="item">			
+					<img src="../imgs/drink4.jpg">
+					<p class="ab">牛奶香蕉汁</p>
+					<p>香蕉有除热、润肠、通便的功效，加入牛奶后，不但营养丰富，香甜可口，尤其适合热结便秘者食用。</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+			
+			<a href="javascript:void(0);" class="rice">
+				<div class="item">			
+					<img src="../imgs/rice1.jpg">
+					<p class="ab">煎米饭饼</p>
+					<p>做硬的米饭，可以炒，做软了的米饭，就可以变身成煎饭饼了，比蛋炒饭少了些油腻，做早餐相当不错呢。</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="rice">
+				<div class="item">			
+					<img src="../imgs/rice2.jpg">
+					<p class="ab">蒙奇奇米饭</p>
+					<p>蒙奇奇是我们生活中常常见到的可爱玩偶，它们形象多变，有各种时尚造型，每种都萌到爆。</p>	
+					<p>13￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="rice">
+				<div class="item">			
+					<img src="../imgs/rice3.jpg">
+					<p class="ab">米饭批萨</p>
+					<p>传统的批萨一般是用面做饼底的，今天上传个别具特色的批萨吧——米饭批萨。</p>	
+					<p>11￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="rice">
+				<div class="item">			
+					<img src="../imgs/rice4.jpg">
+					<p class="ab">酸菜肉末炒米饭</p>
+					<p>酸味更开胃，加上些许辣椒丁，酸辣酸辣超级好吃。</p>	
+					<p>9￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="rice">
+				<div class="item">			
+					<img src="../imgs/rice5.jpg">
+					<p class="ab">黑豆米饭</p>
+					<p>黑豆具有高蛋白、低热量的特性，蛋白质含量高达45%以上，其中优质蛋白大约比黄豆高出1/4左右，居各种豆类之首。</p>	
+					<p>10￥</p>					
+				</div>
+			</a>
+
+			<a href="javascript:void(0);" class="rice">
+				<div class="item">			
+					<img src="../imgs/rice6.jpg">
+					<p class="ab">五彩什锦蛋炒饭</p>
+					<p>五彩缤纷的蛋炒饭是不是看上去就很有食欲。家里有小孩子不爱吃饭可以做这个蛋炒饭。</p>	
+					<p>11￥</p>					
+				</div>
+			</a>
+		</div>
+		<input type="button" name="order" value="点餐" id="order">
+	<!--------------------------------------------下单的小图---------------------------------------->
+	<div class="thumbnail">
+		<div id="smallAll" style=" overflow:scroll; width:315px; height:720px";>
+			<ul id="dianc"></ul>
+		</div>
+			<hr>
+		<!-------------------- 合计算钱 ------------------->
+		<div id="sum">合计：</div>
+		<span id="money"></span>
+		<span id="remove"><a href="javascript:void(0);">收回点餐板</a></span>
+		<input type="button" value="下单" id="down">
+		</div>
+	</div>
+</body>
+</html>

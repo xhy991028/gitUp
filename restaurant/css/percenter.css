@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin:0;
+}
+body {
+	background: #E2F1F4;
+}
+#information {
+	width: 800px;
+	height: 100%;
+	background: white;
+	position: absolute;
+	left: 400px;
+	top: 70px;
+}
+#ji {
+	width: 800px;
+	height: 40px;
+	background: #F7F7F7;
+	border: 1px solid #EDEFEC;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 40px;
+}
+#imgg{
+	width: 80px;
+	height: 80px;
+	/*background: hotpink;*/
+	position: absolute;
+	left: 80px;
+	top: 115px;
+}
+#userna {
+	position: relative;
+	top: 170px;
+	left: 80px;
+	font-size: 12px;
+}
+#lv {
+	font-size: 12px;
+	position: absolute;
+	left: 200px;
+	top: 120px;
+}
+#lv span {
+	color: green;
+}
+
+#safety {
+	font-size: 12px;
+	position: absolute;
+	left: 200px;
+	top: 150px;
+}
+#safety span {
+	color: green;
+}
+
+#reputation {
+	font-size: 12px;
+	position: absolute;
+	left: 200px;
+	top: 180px;
+}
+#reputation span {
+	color: green;
+}
+#myorder {
+	width: 800px;
+	height: 40px;
+	background: #F7F7F7;
+	border: 1px solid #EDEFEC;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 40px;
+	position: relative;
+	top: 200px;
+}
+#user{
+	font-size: 20px;
+}
+
+#allordeer .table {
+	width: 800px;
+	margin:0 auto;
+	margin-top: 80px;
+	position: absolute;
+	top: 350px;
+	left: 400px;
+}
+.table {
+	text-align: center;
+}
+.table thead tr th{
+	text-align: center;
+
+}
+#dingdana tr td:nth-child(2){
+	width: 50px;
+	height: 50px;
+}
+#drop_out {
+	position: absolute;
+	top: 300px;
+	left: 1080px;
+}
+#ret {
+	position: absolute;
+	left: 1125px;
+	top: 75px;
+}
